@@ -221,10 +221,9 @@ Bienvenue dans l'équipe du changement!
             setattr(testPost,attribute , propObject)
             testPost.createDF()
             print(attribute, testValue, testPost.give_pred(model))
-        propObject['value'] = 1
+        propObject['value'] = originalValue
+        setattr(testPost, attribute, propObject)
 
-        setattr(testPost, 'sentiment', propObject)
-        # setattr(testPost, attribute, propObject)
 
 
 
